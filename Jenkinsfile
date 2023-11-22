@@ -26,6 +26,7 @@ pipeline {
 		stage('Compile') {
 			steps {
 				echo 'Compile'
+				sh "java --version"
 				sh "mvn clean compile"
 			}
 		}
